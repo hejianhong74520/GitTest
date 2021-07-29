@@ -42,16 +42,16 @@ namespace MyService
             
             bool bRtn = PBLogin(@"D:\Software\pbrc-光大证券\pbrc.exe", @"D:\GitLab\tower_bridge_4\Debug", "89050001", "1q");
             //sw.WriteLine("PBLogin=" + bRtn.ToString()+ DateTime.Now.ToString() + "\n");
-            //if (!bRtn)
-            //{
-            //    sw.WriteLine("demoWork登录不成功" + DateTime.Now.ToString()+"\n");
-            //    //logger.Info("demoWork登录不成功");
-            //}
-            //else
-            //{
-            //    sw.WriteLine("demoWork登录成功" + DateTime.Now.ToString()+"\n");
-            //    //logger.Info("demoWork成功");
-            //}
+            if (!bRtn)
+            {
+                sw.WriteLine("demoWork登录不成功" + DateTime.Now.ToString() + "\n");
+                //logger.Info("demoWork登录不成功");
+            }
+            else
+            {
+                sw.WriteLine("demoWork登录成功" + DateTime.Now.ToString() + "\n");
+                //logger.Info("demoWork成功");
+            }
             Thread.Sleep(10000);
 
             bRtn = Send_Instruction("300 华润测试产品", "1", "600555", "买入", "限价", "20", "200", Result, ErrInfo);
