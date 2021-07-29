@@ -28,6 +28,9 @@ namespace MyService
                 };
                 ServiceBase.Run(ServicesToRun);
 
+                //新加功能
+                //我要新加功能
+
             }
 
         }
