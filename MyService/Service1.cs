@@ -22,6 +22,12 @@ namespace MyService
         public static extern bool Send_Instruction(string strProductNo, string strUnitNo, string strStockNo, string strEntrustDir, string strPriceType, string strEntrustPrice, string strEntrustAmount, StringBuilder APIResult, StringBuilder APIErrInfo);
 
         const int MSG_BUFF_SIZE = 1024 * 1024;
+        const int FIFO1 = 1;
+        const int FIFO2 = 1;
+        const int FIFO3 = 1;
+        const int FIFO4 = 1;
+        const int FIFO5 = 1;
+
 
         public Service1()
         {
