@@ -28,6 +28,12 @@ namespace MyService
         const int FIFO4 = 1;
         const int FIFO5 = 1;
 
+        const int FIFO6 = 1;
+        const int FIFO7 = 1;
+        const int FIFO8 = 1;
+        const int FIFO9 = 1;
+      
+
 
         public Service1()
         {
